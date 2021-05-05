@@ -3,17 +3,14 @@
   --primary-color: #111111;
   --secondary-color: #777777;
 }
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
 html{
   font-size: 62.5%;
 
 }
 
 html,body{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -22,8 +19,8 @@ html,body{
 }
 body {
   font-size: 1.6rem;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
     
 }
 .container{
@@ -67,6 +64,7 @@ a{
   display: grid;
   grid-template-columns: repeat(3, minmax(250px,1fr));
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .cards .card img{
   width: 100%;

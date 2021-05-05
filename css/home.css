@@ -1,0 +1,23 @@
+.avatar{
+  height: 366px;
+  background: #FBDFDB;
+  border-radius: 30px;
+  margin: 4rem auto;
+
+}
+.content{
+  width: 100%;
+  max-width: 80%;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  margin: 0 auto;
+
+}
+.avatar p{
+  width: 100%;
+  max-width:316px;
+  font-size: 1.8rem;
+  color: #000000;
+  line-height: 2.8rem;
+}
