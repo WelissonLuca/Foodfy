@@ -1,87 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Foodfy</title>
-		<link rel="stylesheet" href="/css/main.css" />
-		<link rel="stylesheet" href="/css/recipes.css" />
-	</head>
-	<body>
-		<header class="container">
-			<div class="navbar">
-				<img src="/assets/logo.png" alt="Foodfy" />
-				<nav>
-					<a href="about.html">Sobre</a>
-					<a href="recipes.html">Receitas</a>
-				</nav>
-			</div>
-		</header>
-		<main>
-			<div class="container">
-				<h2 class="title">Mais acessadas</h2>
-				<div class="cards">
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-					<div class="card">
-						<img src="/assets/burger.png" alt="Triplo bacon burger" />
-						<h4 class="title">Triplo bacon burger</h4>
-						<span class="subtitle"> por Jorge Relato </span>
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<footer>
-			<span class="subtitle"
-				>Todos os direitos reservados, receitas Foodfy</span
-			>
-		</footer>
-	</body>
-</html>
+{% extends 'layout.njk' %}
+{% block headstyle %}{% endblock %}
+{% block content %}
+  <main>
+    <div class="container">
+      <h2 class="title">Mais acessadas</h2>
+      <div class="cards">
+        {% for item in items %}
+          <div class="card">
+            <img src="{{ item.image }}" alt="Imagem de {{ item.title }}">
+              <h4 class="title">{{ item.title }}</h4>
+              <span class="subtitle">{{ item.author }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </main>
+  {% endblock %}

@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon server.js -e js,html,njk,css,ts,json",
+    "browsersync": "browser-sync start --proxy http://localhost:3000 --files public,src/views "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-node": "^4.1.0",
@@ -18,6 +21,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "git-commit-msg-linter": "^3.1.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1"
   },
   "dependencies": {
