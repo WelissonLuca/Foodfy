@@ -12,7 +12,6 @@ html{
   font-size: 62.5%;
 
 }
-
 html,body{
   box-sizing: border-box;
   height: 100vh;
@@ -24,14 +23,12 @@ body {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
+  background: #fcfcfc;
 }
 .container{
   width: 90%;
   max-width: 980px;
   margin: 0 auto;
-}
-body{
-    background: #fcfcfc;
 }
 a{
     text-decoration: none;
@@ -62,29 +59,12 @@ ul,li{
     transition: all .3s;
 }
 .red {
-    background: #DC4747;
-    
-    
+    background: #DC4747; 
 }
-
-/* Containers */
-.container{
-    height: 100%;
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-  
-    
-    
-}
-
-
-
-
 
 /*=== Menu ===*/
 header{
-    background:var(--primary-color-);
+    background:var(--primary-color);
 }
 #menu{
     display: flex;
@@ -93,11 +73,6 @@ header{
     padding: 2rem 0;
   
 }
-#menu img{
-    color:var(--primary-color-);
-    
-}
-
 /*=== RecipesGrids ===*/
 .content-recipes{
     display: grid;
@@ -114,6 +89,7 @@ header{
 
 /*=== Footer ===*/
 footer{
+    margin-top: auto;
     background: #EEEEEE;
     height: 62px;
     text-align: center;
