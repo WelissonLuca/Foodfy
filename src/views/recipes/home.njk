@@ -1,4 +1,4 @@
-{% extends 'layout.njk' %}
+{% extends './layout.njk' %}
 {% block headstyle %}
   <link rel="stylesheet" href="/css/home.css"/>
 {% endblock %}
@@ -9,7 +9,7 @@
         <h1 class="title">As melhores receitas</h1>
         <p>
           Aprenda a construir os melhores pratos com receitas criadas por
-          						profissionais do mundo inteiro
+                    						profissionais do mundo inteiro
         </p>
       </div>
       <figure>
@@ -22,16 +22,15 @@
       <h2 class="title">Mais acessadas</h2>
       <div class="cards">
         {% for item in items %}
-          <a href='/recipes/{{item.id}}'>
+          <a href='/recipes/{{ item.id }}'>
             <div class="card">
               <img src="{{ item.image }}" alt="Imagem de {{ item.title }}">
                 <h4 class="title">{{ item.title }}</h4>
                 <span class="subtitle">{{ item.author }}</span>
               </div>
-              </a>
-            {% endfor %}
+            </a>
+          {% endfor %}
         </div>
-          
-    </div>
-  </main>
-{% endblock %}
+      </div>
+    </main>
+  {% endblock %}

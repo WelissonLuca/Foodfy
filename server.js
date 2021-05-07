@@ -14,12 +14,12 @@ nunjucks.configure('src/views', {
   noCache: true,
 });
 
-server.get('/', (req, res) => res.render('home', { items: recipeData }));
+server.get('/', (req, res) => res.render('recipes/home', { items: recipeData }));
 
-server.get('/about', (req, res) => res.render('about'));
+server.get('/about', (req, res) => res.render('recipes/about'));
 
 server.get('/recipes', (req, res) =>
-  res.render('recipes', { items: recipeData })
+  res.render('recipes/recipes', { items: recipeData })
 );
 
 server.get('/recipes/:id', (req, res) => {
@@ -33,7 +33,7 @@ server.get('/recipes/:id', (req, res) => {
     ...findRecipe,
   };
 
-  return res.render('description', { item     : recipe });
+  return res.render('recipes/description', { item     : recipe });
 });
 server.use((req, res) => {
   res.status(404).render('not-found');
