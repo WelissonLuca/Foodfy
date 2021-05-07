@@ -33,7 +33,7 @@ server.get('/recipes/:id', (req, res) => {
     ...findRecipe,
   };
 
-  return res.render('description', { item: recipe });
+  return res.render('description', { item     : recipe });
 });
 server.use((req, res) => {
   res.status(404).render('not-found');

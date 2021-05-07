@@ -2,9 +2,10 @@
   "env": {
     "commonjs": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "browser": true
   },
-  "extends": ["airbnb-base", "prettier", "plugin:node/recommended"],
+  "extends": ["airbnb-base", "prettier"],
   "plugins": ["prettier"],
   "globals": {
     "Atomics": "readonly",
@@ -17,10 +18,10 @@
     "prettier/prettier": "off",
     "no-unused-vars": "warn",
     "no-console": "off",
+    "no-restricted-globals":"off",
     "func-names": "off",
     "no-process-exit": "off",
     "object-shorthand": "off",
-
+    "eqeqeq": "off"
   }
 }
-
