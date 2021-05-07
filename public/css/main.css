@@ -57,6 +57,9 @@ a{
   color: var(--primary-color);
   margin-right: 2rem;
 }
+.navbar nav a.active{
+  font-weight: bold;
+}
 
 
 /* ===== Cards ===== */

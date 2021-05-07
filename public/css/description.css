@@ -1,0 +1,26 @@
+main {
+  margin-top: 5rem;
+}
+main img{
+  border-radius: 15px;
+}
+.content > h2.title{
+ 
+  margin: 0;
+}
+.content title{
+  margin: 0;
+}
+.content .row{
+  display: flex;
+  align-items:center;  
+}
+.content .row .title{
+  margin: 0 1rem 0 0;
+  font-size: 2.4rem;
+}
+.content .row .subtitle{
+  font-size: 1.2rem;
+  margin-top: .6rem;
+  cursor: pointer;
+}
