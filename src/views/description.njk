@@ -11,35 +11,35 @@
             <h2 class="title">{{ item.title }}</h2>
             <span class="subtitle">{{ item.author }}</span>
         </div>
-          <div id="Ingredients">
+          <div>
             <div class="row">
               <h2 class="title">Ingredientes</h2>
-              <span class="subtitle">ESCONDER</span>
+              <span class="subtitle button">ESCONDER</span>
             </div>
-            <ul class="ingredients list">
+            <ul class="ingredients list details-content">
               {% for item in item.ingredient %}
                 <li>{{ item }}</li>
               {% endfor %}
             </ul>
           </div>
-          <div id="preparation">
+          <div >
             <div class="row">
               <h2 class="title">Modo de preparo</h2>
-              <span class="subtitle">MOSTRAR</span>
+              <span class="subtitle button">ESCONDER</span>
             </div>
-            <ul class="preparation list">
+            <ul class="preparation list details-content">
               {% for item in item.preparation %}
                 <li>{{ item }}</li>
               {% endfor %}
             </ul>
           </div>
-          <div id="additional">
+          <div>
             <div class="row">
               <h2 class="title">
                 Informações adicionais</h2>
-              <span class="subtitle">ESCONDER</span>
+              <span class="subtitle button">ESCONDER</span>
             </div>
-              <p>{{ item.information }}</p>
+              <p class="details-content">{{ item.information }}</p>
           </div>
         </div>
       </div>
