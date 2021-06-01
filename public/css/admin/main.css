@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+  --primary-color: #111111;
+  --secondary-color: #777777;
+  --third-color: #444444;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+
+}
+html,body{
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility;
+  min-height: 100%; 
+}
+body {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  background: #fcfcfc;
+}
+.container{
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color:var(--primary-color-);
+}
+ul,li{
+    list-style: none;
+}
+.title{
+    font-size: 2.4rem;
+    color: var(--primary-color-);
+    margin: 2rem  0;
+}
+.infos{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button{
+    background: #6558C3;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: all .3s;
+}
+.red {
+    background: #DC4747; 
+}
+
+/*=== Menu ===*/
+header{
+    background:var(--primary-color);
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  
+}
+/*=== RecipesGrids ===*/
+.content-recipes{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:4rem ; 
+    margin: 3rem 0;
+    
+}
+
+
+
+
+
+
+/*=== Footer ===*/
+footer{
+    margin-top: auto;
+    background: #EEEEEE;
+    height: 62px;
+    text-align: center;
+    width: 100%; 
+    
+
+    
+    
+}
+footer p{
+    font-size: 1.4rem;
+    color: #999999;
+    padding: 2.3rem 0;
+}

@@ -1,0 +1,11 @@
+main{
+  margin: 6rem 0;
+}
+main div{
+  margin: 2rem 0;
+}
+.text-about{
+font-size: 1.8rem;
+color: var(--third-color);
+line-height: 2.8rem;
+}

@@ -1,0 +1,36 @@
+#recipes-admin{
+    margin-top: 3rem;
+}
+.grids-admin{
+    display: flex;
+
+}
+.grids-admin img{
+    width: 172px;
+    height: 80px;
+    border-radius: 8.57px;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+.grids-admin > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+.grids-admin > div h3{
+    font-size: 1.8rem;
+    color: var(--primary-color-);
+}
+.grids-admin > div p{
+    font-size: 1.4re,;
+    color: var(--secondary-color);
+}
+.grids-admin > div a{
+    font-size: 1.4rem;
+    color: #6558C3; 
+    transition: all .3s;
+}
+.grids-admin > div a:hover{
+    color: #3222aa; 
+}
